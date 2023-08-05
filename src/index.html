@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tailwindcss</title>
+</head>
+<body class="font-mono">
+    <main class="h-screen">
+
+        <!-- Header -->
+        <header class="flex flex-row justify-around text-red font-bold">
+            <h1 class="my-auto">Platzi Travel</h1>
+            <nav class="my-auto">
+                <a href="#">Locations</a>
+                <a href="#">Stays</a>
+                <a href="#">FAQS</a>
+                <a href="#">About Us</a>
+            </nav>
+            <div class="flex border my-2.5">
+                <img src="../public/svg/search.svg" alt="icon-search" class="mx-3">
+                <img src="../public/svg/moon.svg" alt="icon-mode" class="mx-3">
+                <img src="../public/svg/user.svg" alt="icon-user" class="mx-3">
+            </div>
+        </header>
+    
+        <!-- Main -->
+        <div id="hero" class="relative flex items-center  text-while  bg-[url('../public/imgs/sanFranciscoDesktop.jpg')] bg-cover overflow-hidden">
+            <div class="bg-black opacity-50 absolute w-full h-full"></div>
+            <section id="hero-container-text" class="mx-8 z-10">
+                <h2 class="text-4xl font-bold">Find More Location <br> Like This</h2>
+                <button class="bg-while rounded-full py-3 px-6  m-6  font-semibold text-red hover:text-while hover:bg-red">Explore More</button>
+
+            </section>
+        </div>
+    </main>
+
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
