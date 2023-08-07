@@ -10,8 +10,8 @@
 </head>
 <body class="font-mono">
     <!-- Header -->
-    <header class="flex flex-row justify-around text-red font-bold">
-        <h1 class="my-auto text-xl">Platzi Travel</h1>
+    <header class="flex flex-row justify-around text-red font-bold max-sm:hidden">      <!-- Watch out this breakpoint-->
+        <h1 class="my-auto text-xl"><a href="">Platzi Travel</a></h1>
         <nav class="my-auto">
             <a href="#" class="hover:text-black">Locations</a>
             <a href="#" class="hover:text-black">Stays</a>
@@ -40,7 +40,7 @@
 
 	    <div id="default-carousel" class="m-2 p-4 whitespace-nowrap overflow-hidden" data-carousel="static">
 
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
                 <div class="container-img h-3/5">
                     <img src="../public/imgs/norway.jpg" alt="img-norway" class="h-full">
                 </div>
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
                 <div class="container-img h-3/5">
                     <img src="../public/imgs/new_york.jpg" alt="img-newYork" class="h-full">
                 </div>
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
                 <div class="container-img h-3/5">
                     <img src="../public/imgs/yosemite.jpg" alt="img-Yosemite" class="h-full">
                 </div>
@@ -70,7 +70,7 @@
                 </div>
             </div>
 
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
                 <div class="container-img h-3/5">
                     <img src="../public/imgs/seattle.jpg" alt="img-seattle" class="h-full">
                 </div>
@@ -80,7 +80,7 @@
                 </div>
             </div>
 
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
                 <div class="container-img h-3/5">
                     <img src="../public/imgs/switzerland.jpg" alt="img-switzerland" class="h-full">
                 </div>
@@ -90,7 +90,7 @@
                 </div>
             </div>
 
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
                 <div class="container-img h-3/5">
                     <img src="../public/imgs/berlin.jpg" alt="img-berlin" class="h-full">
                 </div>
@@ -115,8 +115,8 @@
         </div>
 
         <div class="container-grid grid grid-cols-5 grid-rows-2 my-4 h-[40rem] gap-6">
-            <div class="rounded-xl col-span-2 row-span-2 overflow-hidden relative">
-                <img src="../public/imgs/LA.jpg" alt="img-losAngeles">
+            <div class="rounded-xl col-span-2 row-span-2 overflow-hidden relative border">
+                <img src="../public/imgs/LA.jpg" alt="img-losAngeles" class="h-full w-full">
                 <div class="absolute top-0 right-0 m-10 text-end text-while drop-shadow-xl">
                     <h3 class="text-white text-2xl font-bold">Los Angeles</h3>
                     <p class="text-xl">4 rooms, 3 bathrooms, <br> kitchen and private pool.</p>
