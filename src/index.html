@@ -18,10 +18,10 @@
             <a href="#" class="hover:text-black">FAQS</a>
             <a href="#" class="hover:text-black">About Us</a>
         </nav>
-        <div class="flex  my-3">
-            <img src="../public/svg/search.svg" alt="icon-search" class="mx-3">
-            <img src="../public/svg/moon.svg" alt="icon-mode" class="mx-3">
-            <img src="../public/svg/user.svg" alt="icon-user" class="mx-3">
+        <div class="flex items-center">
+            <a href=""><img src="../public/svg/search.svg" alt="icon-search" class="mx-3"></a>
+            <a href=""><img src="../public/svg/moon.svg" alt="icon-mode" class="mx-3"></a>
+            <a href=""><img src="../public/svg/user.svg" alt="icon-user" class="mx-3"></a>
         </div>
     </header>
     
@@ -106,21 +106,37 @@
     <section id="Sec-Trending" class="px-10">
         <h3 class="m-4 text-red text-3xl font-bold">Trending Stays</h3>
 
-        <div class="rounded-xl my-6 h-[36rem] overflow-hidden">
+        <div class="rounded-xl my-6 h-[36rem] overflow-hidden relative">
             <img src="../public/imgs/chicago.jpg" alt="img-chicago" class="w-full h-full">
+            <div class="absolute top-0 right-0 m-14 text-end text-while drop-shadow-xl">
+                <h3 class="text-white text-2xl font-bold">Chicago</h3>
+                <p class="text-xl">2 rooms, bathroom and kitchen</p>
+            </div>
         </div>
 
         <div class="container-grid grid grid-cols-5 grid-rows-2 my-4 h-[40rem] gap-6">
-            <div class="rounded-xl col-span-2 row-span-2 overflow-hidden">
+            <div class="rounded-xl col-span-2 row-span-2 overflow-hidden relative">
                 <img src="../public/imgs/LA.jpg" alt="img-losAngeles">
+                <div class="absolute top-0 right-0 m-10 text-end text-while drop-shadow-xl">
+                    <h3 class="text-white text-2xl font-bold">Los Angeles</h3>
+                    <p class="text-xl">4 rooms, 3 bathrooms, <br> kitchen and private pool.</p>
+                </div>
             </div>
 
-            <div class="rounded-xl col-span-3 overflow-hidden">
+            <div class="rounded-xl col-span-3 overflow-hidden relative">
                 <img src="../public/imgs/miami.jpg" alt="img-miami" class="w-full h-full">
+                <div class="absolute top-0 right-0 m-10 text-end text-while drop-shadow-xl">
+                    <h3 class="text-white text-2xl font-bold">Miami</h3>
+                    <p class="text-xl">3 rooms, 2 bathrooms,  <br>kitchen and amazing sea view.</p>
+                </div>
             </div>
 
-            <div class="rounded-xl col-span-3 overflow-hidden">
+            <div class="rounded-xl col-span-3 overflow-hidden relative">
                 <img src="../public/imgs/bali.jpg" alt="img-bali" class="w-full h-full">
+                <div class="absolute top-0 right-0 m-10 text-end text-while drop-shadow-xl">
+                    <h3 class="text-white text-2xl font-bold">Bali</h3>
+                    <p class="text-xl">2 rooms, 2 bathrooms <br> Kitchen and private pool</p>
+                </div>
             </div>
         </div>
     </section>
