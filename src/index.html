@@ -4,92 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/output.css">
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.0/dist/flowbite.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.0/dist/flowbite.min.css"> -->
     <link rel="stylesheet" href="./styles.css">
     <title>Tailwindcss</title>
 </head>
 <body class="font-mono">
-    <main class="h-screen">
-
-        <!-- Header -->
-        <header class="flex flex-row justify-around text-red font-bold">
-            <h1 class="my-auto">Platzi Travel</h1>
-            <nav class="my-auto">
-                <a href="#">Locations</a>
-                <a href="#">Stays</a>
-                <a href="#">FAQS</a>
-                <a href="#">About Us</a>
-            </nav>
-            <div class="flex  my-2.5">
-                <img src="../public/svg/search.svg" alt="icon-search" class="mx-3">
-                <img src="../public/svg/moon.svg" alt="icon-mode" class="mx-3">
-                <img src="../public/svg/user.svg" alt="icon-user" class="mx-3">
-            </div>
-        </header>
-    
-        <!-- Main -->
-        <div id="hero" class="relative flex items-center  text-while  bg-[url('../public/imgs/sanFranciscoDesktop.jpg')] bg-cover overflow-hidden">
-            <div class="bg-black opacity-50 absolute w-full h-full"></div>
-            <section id="hero-container-text" class="mx-8 z-10">
-                <h2 class="text-4xl font-bold">Find More Location <br> Like This</h2>
-                <button class="bg-while rounded-full py-3 px-6  m-6  font-semibold text-red hover:text-while hover:bg-red">Explore More</button>
-
-            </section>
+    <!-- Header -->
+    <header class="flex flex-row justify-around text-red font-bold">
+        <h1 class="my-auto text-xl">Platzi Travel</h1>
+        <nav class="my-auto">
+            <a href="#" class="hover:text-black">Locations</a>
+            <a href="#" class="hover:text-black">Stays</a>
+            <a href="#" class="hover:text-black">FAQS</a>
+            <a href="#" class="hover:text-black">About Us</a>
+        </nav>
+        <div class="flex  my-3">
+            <img src="../public/svg/search.svg" alt="icon-search" class="mx-3">
+            <img src="../public/svg/moon.svg" alt="icon-mode" class="mx-3">
+            <img src="../public/svg/user.svg" alt="icon-user" class="mx-3">
         </div>
-    </main>
+    </header>
+    
+    <!-- Section Hero -->
+    <div id="Sec-Hero" class="relative flex items-center  text-while  bg-[url('../public/imgs/sanFranciscoDesktop.jpg')] bg-cover">
+        <div class="bg-black opacity-50 absolute w-full h-full"></div>
+        <section id="hero-container-text" class="mx-8 z-10">
+            <h2 class="text-4xl font-bold">Find More Location <br> Like This</h2>
+            <button class="bg-while rounded-full py-3 px-6  m-6  font-semibold text-red hover:text-while hover:bg-red">Explore More</button>
+        </section>
+    </div>
 
     <!-- Section Recomendations -->
-    <section id="Sec-Recomendations" class="p-4">
-        <h3 class="m-4 font-bold text-red text-3xl">Our Recomendations</h3>
+    <section id="Sec-Recomendations" class="relative py-4">
+        <h3 class=" m-4 font-bold text-red text-3xl">Our Recomendations</h3>
 
-	<div id="default-carousel" class="overflow-hidden relative" data-carousel="static">
-        <!-- Carousel wrapper -->
-        <div class="h-96">
+	    <div id="default-carousel" class="m-2 p-4 whitespace-nowrap overflow-hidden" data-carousel="static">
 
-            <!-- Item 1 -->
-            <div class="w-full h-full bg-blue" data-carousel-item>
-                <p class="">item 1</p>
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+                <div class="container-img h-3/5">
+                    <img src="../public/imgs/norway.jpg" alt="img-norway" class="h-full">
+                </div>
+                <div class="container-text bg-green h-2/5 p-4">
+                    <h4 class="text-while font-bold text-xl">Norway</h4>
+                    <p class="text-while">Beautiful Landscapes</p>
+                </div>
             </div>
 
-            <!-- Item 2 -->
-            <div class="w-full h-full  bg-green" data-carousel-item>
-                <p>item 2</p>
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+                <div class="container-img h-3/5">
+                    <img src="../public/imgs/new_york.jpg" alt="img-newYork" class="h-full">
+                </div>
+                <div class="container-tex h-2/5 p-4">
+                    <h4 class="font-bold text-blue text-xl">New York</h4>
+                    <p class="text-blue">Concrete Jungle</p>
+                </div>
             </div>
 
-            <!-- Item 3 -->
-            <div class="w-full h-full  bg-red" data-carousel-item>
-                <p>item 3</p>
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+                <div class="container-img h-3/5">
+                    <img src="../public/imgs/yosemite.jpg" alt="img-Yosemite" class="h-full">
+                </div>
+                <div class="container-text bg-green h-2/5 p-4">
+                    <h4 class="text-while font-bold text-xl">Yosemite</h4>
+                    <p class="text-while">A break from the world</p>
+                </div>
+            </div>
+
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+                <div class="container-img h-3/5">
+                    <img src="../public/imgs/seattle.jpg" alt="img-seattle" class="h-full">
+                </div>
+                <div class="container-text h-2/5 p-4">
+                    <h4 class="text-blue font-bold text-xl">Seattle</h4>
+                    <p class="text-blue">The Vibrant City</p>
+                </div>
+            </div>
+
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+                <div class="container-img h-3/5">
+                    <img src="../public/imgs/switzerland.jpg" alt="img-switzerland" class="h-full">
+                </div>
+                <div class="container-text bg-green h-2/5 p-4 whitespace-normal">
+                    <h4 class="text-while font-bold text-xl">Grimentz</h4>
+                    <p class="text-while">Town Between the Mountains</p>
+                </div>
+            </div>
+
+            <div class=" rounded-lg h-72 w-60 mx-4 shadow-xl overflow-hidden inline-block hover:cursor-pointer">
+                <div class="container-img h-3/5">
+                    <img src="../public/imgs/berlin.jpg" alt="img-berlin" class="h-full">
+                </div>
+                <div class="container-text h-2/5 p-4">
+                    <h4 class="text-blue font-bold text-xl">Berlin</h4>
+                    <p class="text-blue">City of Artists</p>
+                </div>
             </div>
         </div>
-        
-        <!-- Slider indicators -->
-        <div class="flex absolute bottom-5 left-1/2 z-40 space-x-3 -translate-x-1/2 ">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        </div>
-
-        <!-- Slider controls -->
-        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-            </span>
-        </button>
-
-        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            </span>
-        </button>
-    </div>
     </section>
 
     <!-- Section Trending -->
-    <section></section>
+    <section id="Sec-Trending" class="px-10">
+        <h3 class="m-4 text-red text-3xl font-bold">Trending Stays</h3>
 
+        <div class="rounded-xl my-6 h-[36rem] overflow-hidden">
+            <img src="../public/imgs/chicago.jpg" alt="img-chicago" class="w-full h-full">
+        </div>
+
+        <div class="container-grid grid grid-cols-5 grid-rows-2 my-4 h-[40rem] gap-6">
+            <div class="rounded-xl col-span-2 row-span-2 overflow-hidden">
+                <img src="../public/imgs/LA.jpg" alt="img-losAngeles">
+            </div>
+
+            <div class="rounded-xl col-span-3 overflow-hidden">
+                <img src="../public/imgs/miami.jpg" alt="img-miami" class="w-full h-full">
+            </div>
+
+            <div class="rounded-xl col-span-3 overflow-hidden">
+                <img src="../public/imgs/bali.jpg" alt="img-bali" class="w-full h-full">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section FAQ -->
+    <section id="Sec-FAQ">
+        <h3 class="m-6 text-red font-extrabold text-3xl">FAQ</h3>
+        <div class="p-6">
+            <h3 class="text-red font-bold text-xl">Payments Methods</h3>
+            <p>We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, 
+                MasterCard, American Express, Paypal and Binance.</p>
+        </div>
+
+        <div class="p-6">
+            <h3 class="text-red font-bold text-xl">Cancellation Polity</h3>
+            <ul>
+                <li>Cancellations made more than 30 days before the arrival date: full refund of the deposit.</li>
+                <br>
+                <li>Cancellations made between 30 and 15 days before the arrival date: refund of 50% of the deposit.</li>
+                <br>
+                <li>Cancellations made less than 15 days before the arrival date: no refund will be made.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3 class="m-6 text-2xl font-bold">About Us</h3>
+        <ul class="mx-10">
+            <li><a href="#" class="hover:text-red font-semibold">Investors</a></li>
+            <li><a href="#" class="hover:text-red font-semibold">Jobs</a></li>
+            <li><a href="#" class="hover:text-red font-semibold">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-red font-semibold">Terms and Conditions</a></li>
+            <li><a href="#" class="hover:text-red font-semibold">Platzi Travel.Inc</a></li>
+            <li><a href="#" class="hover:text-red font-semibold">Follow Us</a></li>
+        </ul>
+        <div class="flex flex-row justify-between my-4 mx-10 w-24">
+            <a href="#"><img src="../public/svg/twitter.svg" alt="" class="h-8"></a>
+            <a href="#"><img src="../public/svg/instagram.svg" alt="" class="h-8"></a>
+        </div>
+
+    </footer>
 
     <script src="./scripts.js"></script>
-    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 
 </body>
 </html>
