@@ -4,183 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/output.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.0/dist/flowbite.min.css"> -->
     <link rel="stylesheet" href="./styles.css">
     <title>Tailwindcss</title>
 </head>
 <body class="font-mono">
-    <!-- Header -->
-    <header class="flex flex-row justify-around text-red font-bold max-sm:hidden">      <!-- Watch out this breakpoint-->
-        <h1 class="my-auto text-xl"><a href="">Platzi Travel</a></h1>
-        <nav class="my-auto">
-            <a href="#" class="hover:text-black">Locations</a>
-            <a href="#" class="hover:text-black">Stays</a>
-            <a href="#" class="hover:text-black">FAQS</a>
-            <a href="#" class="hover:text-black">About Us</a>
-        </nav>
-        <div class="flex items-center">
-            <a href=""><img src="../public/svg/search.svg" alt="icon-search" class="mx-3"></a>
-            <a href=""><img src="../public/svg/moon.svg" alt="icon-mode" class="mx-3"></a>
-            <a href=""><img src="../public/svg/user.svg" alt="icon-user" class="mx-3"></a>
-        </div>
-    </header>
-    
-    <!-- Section Hero -->
-    <div id="Sec-Hero" class="relative flex items-center  text-while  bg-[url('../public/imgs/sanFranciscoDesktop.jpg')] bg-cover">
-        <div class="bg-black opacity-50 absolute w-full h-full"></div>
-        <section id="hero-container-text" class="mx-8 z-10">
-            <h2 class="text-4xl font-bold">Find More Location <br> Like This</h2>
-            <button class="bg-while rounded-full py-3 px-6  m-6  font-semibold text-red hover:text-while hover:bg-red">Explore More</button>
-        </section>
-    </div>
+    <!-- Header Section -->
 
-    <!-- Section Recomendations -->
-    <section id="Sec-Recomendations" class="relative py-4">
-        <h3 class=" m-4 font-bold text-red text-3xl">Our Recomendations</h3>
 
-	    <div id="default-carousel" class="m-2 p-4 whitespace-nowrap overflow-hidden" data-carousel="static">
-
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
-                <div class="container-img h-3/5">
-                    <img src="../public/imgs/norway.jpg" alt="img-norway" class="h-full">
-                </div>
-                <div class="container-text bg-green h-2/5 p-4">
-                    <h4 class="text-while font-bold text-xl">Norway</h4>
-                    <p class="text-while">Beautiful Landscapes</p>
-                </div>
-            </div>
-
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
-                <div class="container-img h-3/5">
-                    <img src="../public/imgs/new_york.jpg" alt="img-newYork" class="h-full">
-                </div>
-                <div class="container-tex h-2/5 p-4">
-                    <h4 class="font-bold text-blue text-xl">New York</h4>
-                    <p class="text-blue">Concrete Jungle</p>
-                </div>
-            </div>
-
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
-                <div class="container-img h-3/5">
-                    <img src="../public/imgs/yosemite.jpg" alt="img-Yosemite" class="h-full">
-                </div>
-                <div class="container-text bg-green h-2/5 p-4">
-                    <h4 class="text-while font-bold text-xl">Yosemite</h4>
-                    <p class="text-while">A break from the world</p>
-                </div>
-            </div>
-
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
-                <div class="container-img h-3/5">
-                    <img src="../public/imgs/seattle.jpg" alt="img-seattle" class="h-full">
-                </div>
-                <div class="container-text h-2/5 p-4">
-                    <h4 class="text-blue font-bold text-xl">Seattle</h4>
-                    <p class="text-blue">The Vibrant City</p>
-                </div>
-            </div>
-
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
-                <div class="container-img h-3/5">
-                    <img src="../public/imgs/switzerland.jpg" alt="img-switzerland" class="h-full">
-                </div>
-                <div class="container-text bg-green h-2/5 p-4 whitespace-normal">
-                    <h4 class="text-while font-bold text-xl">Grimentz</h4>
-                    <p class="text-while">Town Between the Mountains</p>
-                </div>
-            </div>
-
-            <div class=" rounded-lg h-72 w-60 mx-4 shadow-lg overflow-hidden inline-block hover:cursor-pointer">
-                <div class="container-img h-3/5">
-                    <img src="../public/imgs/berlin.jpg" alt="img-berlin" class="h-full">
-                </div>
-                <div class="container-text h-2/5 p-4">
-                    <h4 class="text-blue font-bold text-xl">Berlin</h4>
-                    <p class="text-blue">City of Artists</p>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section id="Sec-Hero" class=" bg-[url(../public/imgs/SanFrancisco.jpg)] bg-cover">
+        <div class="grid text-center content-around h-screen">
+            <form action="">
+                <input type="text" placeholder="  City Name" class="shadow-lg rounded-full py-4 w-3/4 outline-none text-center">
+            </form>
+            <button class="text-red text-lg font-semibold rounded-full shadow-lg bg-white hover:bg-red hover:text-white p-4 w-1/2 mx-auto">Explore More</button>
         </div>
     </section>
 
-    <!-- Section Trending -->
-    <section id="Sec-Trending" class="px-10">
-        <h3 class="m-4 text-red text-3xl font-bold">Trending Stays</h3>
-
-        <div class="rounded-xl my-6 h-[36rem] overflow-hidden relative">
-            <img src="../public/imgs/chicago.jpg" alt="img-chicago" class="w-full h-full">
-            <div class="absolute top-0 right-0 m-14 text-end text-while drop-shadow-xl">
-                <h3 class="text-white text-2xl font-bold">Chicago</h3>
-                <p class="text-xl">2 rooms, bathroom and kitchen</p>
-            </div>
-        </div>
-
-        <div class="container-grid grid grid-cols-5 grid-rows-2 my-4 h-[40rem] gap-6">
-            <div class="rounded-xl col-span-2 row-span-2 overflow-hidden relative border">
-                <img src="../public/imgs/LA.jpg" alt="img-losAngeles" class="h-full w-full">
-                <div class="absolute top-0 right-0 m-10 text-end text-while drop-shadow-xl">
-                    <h3 class="text-white text-2xl font-bold">Los Angeles</h3>
-                    <p class="text-xl">4 rooms, 3 bathrooms, <br> kitchen and private pool.</p>
-                </div>
-            </div>
-
-            <div class="rounded-xl col-span-3 overflow-hidden relative">
-                <img src="../public/imgs/miami.jpg" alt="img-miami" class="w-full h-full">
-                <div class="absolute top-0 right-0 m-10 text-end text-while drop-shadow-xl">
-                    <h3 class="text-white text-2xl font-bold">Miami</h3>
-                    <p class="text-xl">3 rooms, 2 bathrooms,  <br>kitchen and amazing sea view.</p>
-                </div>
-            </div>
-
-            <div class="rounded-xl col-span-3 overflow-hidden relative">
-                <img src="../public/imgs/bali.jpg" alt="img-bali" class="w-full h-full">
-                <div class="absolute top-0 right-0 m-10 text-end text-while drop-shadow-xl">
-                    <h3 class="text-white text-2xl font-bold">Bali</h3>
-                    <p class="text-xl">2 rooms, 2 bathrooms <br> Kitchen and private pool</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Section FAQ -->
-    <section id="Sec-FAQ">
-        <h3 class="m-6 text-red font-extrabold text-3xl">FAQ</h3>
-        <div class="p-6">
-            <h3 class="text-red font-bold text-xl">Payments Methods</h3>
-            <p>We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, 
-                MasterCard, American Express, Paypal and Binance.</p>
-        </div>
-
-        <div class="p-6">
-            <h3 class="text-red font-bold text-xl">Cancellation Polity</h3>
-            <ul>
-                <li>Cancellations made more than 30 days before the arrival date: full refund of the deposit.</li>
-                <br>
-                <li>Cancellations made between 30 and 15 days before the arrival date: refund of 50% of the deposit.</li>
-                <br>
-                <li>Cancellations made less than 15 days before the arrival date: no refund will be made.</li>
-            </ul>
+    <!-- Sec-Recomendations -->
+    <section id="Sec-Recomendations" class="h-80">
+        <h3 class="text-red text-3xl font-bold p-5">Our Recomendations</h3>
+        <div id="container-carousel" class="border p-2 h-40">
+            
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <h3 class="m-6 text-2xl font-bold">About Us</h3>
-        <ul class="mx-10">
-            <li><a href="#" class="hover:text-red font-semibold">Investors</a></li>
-            <li><a href="#" class="hover:text-red font-semibold">Jobs</a></li>
-            <li><a href="#" class="hover:text-red font-semibold">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-red font-semibold">Terms and Conditions</a></li>
-            <li><a href="#" class="hover:text-red font-semibold">Platzi Travel.Inc</a></li>
-            <li><a href="#" class="hover:text-red font-semibold">Follow Us</a></li>
-        </ul>
-        <div class="flex flex-row justify-between my-4 mx-10 w-24">
-            <a href="#"><img src="../public/svg/twitter.svg" alt="" class="h-8"></a>
-            <a href="#"><img src="../public/svg/instagram.svg" alt="" class="h-8"></a>
-        </div>
-
-    </footer>
 
     <script src="./scripts.js"></script>
-
 </body>
 </html>
