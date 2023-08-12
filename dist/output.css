@@ -538,16 +538,8 @@ video {
   position: static;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .relative {
   position: relative;
-}
-
-.bottom-0 {
-  bottom: 0px;
 }
 
 .z-20 {
@@ -575,6 +567,11 @@ video {
   margin-right: 2.5rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -583,6 +580,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .my-4 {
@@ -595,6 +597,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -605,6 +612,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-10 {
@@ -637,6 +648,14 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[s\] {
+  height: s;
+}
+
+.h-\[\] {
+  height: ;
 }
 
 .w-1\/2 {
@@ -709,124 +728,24 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
+.bg-\[url\(\'\.\.\/public\/imgs\/LA\.jpg\'\)\] {
+  background-image: url('../public/imgs/LA.jpg');
 }
 
-.bg-\[url\(\'\.\/public\/imgs\/LA\.jpg\'\)\] {
-  background-image: url('./public/imgs/LA.jpg');
-}
-
-.bg-\[url\(\'\.\/public\/imgs\/bali\.jpg\'\)\] {
-  background-image: url('./public/imgs/bali.jpg');
-}
-
-.bg-\[url\(\'\.\/public\/imgs\/chicago\.jpg\'\)\] {
-  background-image: url('./public/imgs/chicago.jpg');
-}
-
-.bg-\[url\(\'\.\/public\/imgs\/miami\.jpg\'\)\] {
-  background-image: url('./public/imgs/miami.jpg');
-}
-
-.bg-\[url\(\'\.\/public\/imgs\/sanFrancisco\.jpg\'\)\] {
-  background-image: url('./public/imgs/sanFrancisco.jpg');
-}
-
-.bg-\[url\(\.\/public\/imgs\/sanFrancisco\.jpg\)\] {
-  background-image: url(./public/imgs/sanFrancisco.jpg);
-}
-
-.bg-\[url\(\.\/public\/imgs\/SanFrancisco\.jpg\)\] {
-  background-image: url(./public/imgs/SanFrancisco.jpg);
-}
-
-.bg-\[url\(public\/imgs\/sanFrancisco\.jpg\)\] {
-  background-image: url(public/imgs/sanFrancisco.jpg);
-}
-
-.bg-\[url\(\'public\/imgs\/sanFrancisco\.jpg\'\)\] {
-  background-image: url('public/imgs/sanFrancisco.jpg');
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'\.\/src\/public\/\'\)\] {
-  background-image: url('./src/public/');
-}
-
-.bg-\[url\(\'\.\/src\/public\/sanFrancisco\.jpg\'\)\] {
-  background-image: url('./src/public/sanFrancisco.jpg');
-}
-
-.bg-\[url\(\.\/src\/public\/sanFrancisco\.jpg\)\] {
-  background-image: url(./src/public/sanFrancisco.jpg);
-}
-
-.bg-\[url\(\/src\/public\/sanFrancisco\.jpg\)\] {
-  background-image: url(/src/public/sanFrancisco.jpg);
-}
-
-.bg-\[url\(src\/public\/sanFrancisco\.jpg\)\] {
-  background-image: url(src/public/sanFrancisco.jpg);
-}
-
-.bg-\[url\(src\/public\/SanFrancisco\.jpg\)\] {
-  background-image: url(src/public/SanFrancisco.jpg);
-}
-
-.bg-\[url\(\'\.\/src\/public\/SanFrancisco\.jpg\'\)\] {
-  background-image: url('./src/public/SanFrancisco.jpg');
-}
-
-.bg-\[url\(\'\.\/src\/public\/anFrancisco\.jpg\'\)\] {
-  background-image: url('./src/public/anFrancisco.jpg');
-}
-
-.bg-\[url\(\'\.\/src\/public\/\/sanFrancisco\.jpg\'\)\] {
-  background-image: url('./src/public//sanFrancisco.jpg');
-}
-
-.bg-\[url\(\'\.\/src\/public\/imgs\/sanFrancisco\.jpg\'\)\] {
-  background-image: url('./src/public/imgs/sanFrancisco.jpg');
-}
-
-.bg-\[url\(\'\.\/src\/public\/img\/sanFrancisco\.jpg\'\)\] {
-  background-image: url('./src/public/img/sanFrancisco.jpg');
-}
-
-.bg-\[url\(\.\/src\/public\/imgs\/sanFrancisco\.jpg\)\] {
-  background-image: url(./src/public/imgs/sanFrancisco.jpg);
-}
-
-.bg-\[url\(\.\.\/public\/imgs\/sanFrancisco\.jpg\)\] {
-  background-image: url(../public/imgs/sanFrancisco.jpg);
-}
-
-.bg-\[url\(\'\'\.\.\/public\/imgs\/sanFrancisco\.jpg\)\] {
-  background-image: url(''../public/imgs/sanFrancisco.jpg);
-}
-
-.bg-\[url\(\'\.\.\/public\/imgs\/sanFrancisco\.jpg\'\)\] {
-  background-image: url('../public/imgs/sanFrancisco.jpg');
+.bg-\[url\(\'\.\.\/public\/imgs\/bali\.jpg\'\)\] {
+  background-image: url('../public/imgs/bali.jpg');
 }
 
 .bg-\[url\(\'\.\.\/public\/imgs\/chicago\.jpg\'\)\] {
   background-image: url('../public/imgs/chicago.jpg');
 }
 
-.bg-\[url\(\'\.\.\/public\/imgs\/LA\.jpg\'\)\] {
-  background-image: url('../public/imgs/LA.jpg');
-}
-
 .bg-\[url\(\'\.\.\/public\/imgs\/miami\.jpg\'\)\] {
   background-image: url('../public/imgs/miami.jpg');
 }
 
-.bg-\[url\(\'\.\.\/public\/imgs\/bali\.jpg\'\)\] {
-  background-image: url('../public/imgs/bali.jpg');
+.bg-\[url\(\'\.\.\/public\/imgs\/sanFrancisco\.jpg\'\)\] {
+  background-image: url('../public/imgs/sanFrancisco.jpg');
 }
 
 .bg-cover {
@@ -935,11 +854,13 @@ video {
   box-sizing: border-box;
 }
 
-#Sec-Header {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  transition: bottom 0.3s;
+@media (max-width: 768px){
+  #Sec-Header{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: bottom 0.3s;
+  }
 }
 
 .hover\:cursor-pointer:hover {
@@ -951,6 +872,11 @@ video {
   background-color: rgb(204 45 74 / var(--tw-bg-opacity));
 }
 
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .hover\:text-red:hover {
   --tw-text-opacity: 1;
   color: rgb(204 45 74 / var(--tw-text-opacity));
@@ -959,4 +885,52 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:h-screen {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-\[\] {
+    height: ;
+  }
+
+  .md\:h-\[95vh\] {
+    height: 95vh;
+  }
+
+  .md\:h-\[92vh\] {
+    height: 92vh;
+  }
+
+  .md\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .md\:h-\[80vh\] {
+    height: 80vh;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
+  }
 }
