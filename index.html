@@ -36,14 +36,22 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="Sec-Hero" class="bg-[url('../public/imgs/sanFrancisco.jpg')] bg-cover">
-        <div class="grid text-center content-around h-screen">
+    <section id="Sec-Hero" class="relative md:flex md:items-center  bg-[url('../public/imgs/sanFrancisco.jpg')] md:bg-[url('../public/imgs/sanFranciscoDesktop.jpg')] bg-cover h-screen md:h-[90vh]">
+        <div class="grid md:hidden text-center content-around h-full">
             <form action="">
-                <input type="text" placeholder="  City Name" class="shadow-lg rounded-full py-4 w-3/4 outline-none text-center">
+                <input type="text" placeholder="City Name" class="shadow-lg rounded-full py-4 w-3/4 outline-none text-center">
             </form>
             <button class="text-red text-lg font-semibold rounded-full shadow-lg bg-white hover:bg-red hover:text-white p-4 w-1/2 mx-auto">Explore More</button>
         </div>
+
+        <div class="hidden md:block mx-8 z-10">
+            <h2 class="text-4xl font-bold">Find More Location <br> Like This</h2>
+            <button class="bg-white rounded-full py-3 px-6  m-6  font-semibold text-red hover:text-white hover:bg-red">Explore More</button>
+        </div>
     </section>
+
+
+
 
     <!-- Recomendations Section -->
     <section id="Sec-Recomendations" class="relative py-4">
