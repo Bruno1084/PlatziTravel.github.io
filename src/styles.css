@@ -7,3 +7,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#Sec-Header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: bottom 0.3s;
+}

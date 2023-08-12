@@ -1,3 +1,5 @@
+//carrousel horizontal movement
+
 const carousel = document.querySelector("#default-carousel");
 let isDown = false;
 let startX;
@@ -43,3 +45,15 @@ carousel.addEventListener("touchmove", (e) => {
   const walk = (x - startX) * 1.5; //scroll-slower
   carousel.scrollLeft = scrollLeft - walk;
 });
+
+//header vertical movement
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("Sec-Header").style.bottom = "0";
+  } else {
+    document.getElementById("Sec-Header").style.bottom = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
