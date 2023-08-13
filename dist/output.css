@@ -784,6 +784,18 @@ video {
   background-image: url('../public/imgs/bali.jpg');
 }
 
+.bg-\[url\(\'\.\/public\/imgs\/LA\.jpg\'\)\] {
+  background-image: url('./public/imgs/LA.jpg');
+}
+
+.bg-\[url\(\'\.\/public\/imgs\/bali\.jpg\'\)\] {
+  background-image: url('./public/imgs/bali.jpg');
+}
+
+.bg-\[url\(\'\.\/public\/imgs\/miami\.jpg\'\)\] {
+  background-image: url('./public/imgs/miami.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
