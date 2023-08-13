@@ -8,9 +8,11 @@
     box-sizing: border-box;
 }
 
-#Sec-Header {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    transition: bottom 0.3s;
+@media (max-width: 768px){
+    #Sec-Header{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        transition: bottom 0.3s;
+    }
 }
