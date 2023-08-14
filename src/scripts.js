@@ -46,14 +46,17 @@ carousel.addEventListener("touchmove", (e) => {
   carousel.scrollLeft = scrollLeft - walk;
 });
 
-//header vertical movement
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("Sec-Header").style.bottom = "0";
-  } else {
-    document.getElementById("Sec-Header").style.bottom = "-50px";
+
+if (window.matchMedia("(max-width: 640px)").matches) {
+  //header vertical movement
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("Sec-Header").style.bottom = "0";
+    } else {
+      document.getElementById("Sec-Header").style.bottom = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
   }
-  prevScrollpos = currentScrollPos;
 }
